@@ -1,0 +1,12 @@
+<ng-template #template> This is my template </ng-template>
+
+<p #paragraph>My paragraph</p>
+
+@for (value of [1, 2, 3]; track value) {
+  <app-sample [value]="value">
+    <li ngProjectAs="list" #element>a</li>
+    <li ngProjectAs="list" #element>b</li>
+    <li ngProjectAs="list" #element>c</li>
+    <span #title>Answers:</span>
+  </app-sample>
+}

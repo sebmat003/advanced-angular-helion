@@ -1,0 +1,7 @@
+<h3>
+  Change detection is triggered at:
+  <span [textContent]="time | date: 'hh:mm:ss:SSS'"></span>
+</h3>
+<button class="btn btn-primary" (click)="(0)">Trigger Change Detection</button>
+
+<app-on-push [counter]="counter"></app-on-push>

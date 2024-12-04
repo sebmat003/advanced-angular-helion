@@ -1,0 +1,15 @@
+@let topLevel = value;
+<div>@let insideDiv = value;</div>
+
+{{ topLevel }}
+{{ insideDiv }}
+
+@if (condition) {
+  {{ topLevel + insideDiv }}
+  @let nested = value;
+  @if (condition) {
+    {{ topLevel + insideDiv + nested }}
+  }
+}
+
+<!-- {{nested}} Error, not hoisted from @if-->
