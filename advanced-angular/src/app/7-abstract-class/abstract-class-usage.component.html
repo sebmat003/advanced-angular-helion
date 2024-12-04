@@ -1,0 +1,4 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <app-input-text formControlName="control"></app-input-text>
+  <button mat-button type="submit" [disabled]="form.invalid">Submit</button>
+</form>

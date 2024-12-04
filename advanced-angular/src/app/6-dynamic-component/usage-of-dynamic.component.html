@@ -1,0 +1,10 @@
+<h2>Dynamic Component</h2>
+<ng-container #container></ng-container>
+<div class="toolbar">
+  <button (click)="createComponent()">Create Component</button>
+  <button (click)="destroyComponent()">Destroy Component</button>
+</div>
+
+<ng-template #content>
+  <app-dynamic-content></app-dynamic-content>
+</ng-template>

@@ -4,7 +4,6 @@ import { ChangeDetectionComponent } from './2-change-detection/change-detection.
 import { TemplateVariablesComponent } from './3-template-variables/template-variables.component';
 import { ViewChildContentChildComponent } from './4-viewchild-contentchild/viewchild-contentchild.component';
 import { AfterRenderComponent } from './5-afterRender/afterRender.component';
-import { DynamicComponent } from './6-dynamic-component/dynamic.component';
 import { AbstractClassUsageComponent } from './7-abstract-class/abstract-class-usage.component';
 import { ResolverUsageComponent } from './8-resolver/resolver-usage.component';
 import { DiProvidersComponent } from './9-di-providers/di-providers.component';
@@ -17,6 +16,7 @@ import { DynamicFormsComponent } from './15-dynamic-forms/dynamic-forms.componen
 import { RoutingComponent } from './16-routing/routing.component';
 import { LanguageComponent } from './17-language-service/language.component';
 import { LoginComponent } from './18-login/login.component';
+import { UsageOfDynamicComponent } from './6-dynamic-component/usage-of-dynamic.component';
 
 @Component({
   selector: 'app-root',
@@ -28,7 +28,6 @@ import { LoginComponent } from './18-login/login.component';
     TemplateVariablesComponent,
     ViewChildContentChildComponent,
     AfterRenderComponent,
-    DynamicComponent,
     AbstractClassUsageComponent,
     ResolverUsageComponent,
     DiProvidersComponent,
@@ -41,6 +40,7 @@ import { LoginComponent } from './18-login/login.component';
     RoutingComponent,
     LanguageComponent,
     LoginComponent,
+    UsageOfDynamicComponent,
   ],
 })
 export class AppComponent {}

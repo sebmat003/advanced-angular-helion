@@ -1,11 +1,8 @@
 import {
   afterNextRender,
-  afterRender,
-  afterRenderEffect,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
-  contentChild,
   ElementRef,
   inject,
   signal,
@@ -31,9 +28,9 @@ export class AfterRenderComponent {
   }
 
   constructor() {
-    // setInterval(() => {
+    // interval(3000).pipe(takeUntilDestroyed()).subscribe(() => {
     //   this.counter.set(this.counter() + 3);
-    // }, 3000);
+    // });
 
     afterNextRender({
       read: () => {
