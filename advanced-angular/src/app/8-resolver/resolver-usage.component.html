@@ -1,0 +1,5 @@
+<p>{{ data()?.title }} {{ data()?.id }}</p>
+
+@for (item of data()?.elements; track $index) {
+  <button [disabled]="!item.isAvailable">{{ item.value }}</button>
+}

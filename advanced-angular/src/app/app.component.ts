@@ -5,7 +5,6 @@ import { TemplateVariablesComponent } from './3-template-variables/template-vari
 import { ViewChildContentChildComponent } from './4-viewchild-contentchild/viewchild-contentchild.component';
 import { AfterRenderComponent } from './5-afterRender/afterRender.component';
 import { AbstractClassUsageComponent } from './7-abstract-class/abstract-class-usage.component';
-import { ResolverUsageComponent } from './8-resolver/resolver-usage.component';
 import { DiProvidersComponent } from './9-di-providers/di-providers.component';
 import { Renderer2Component } from './10-renderer2/renderer2.component';
 import { DeferComponent } from './11-defer/defer.component';
@@ -15,8 +14,8 @@ import { CustomValidatorComponent } from './14-custom-validator/custom-validator
 import { DynamicFormsComponent } from './15-dynamic-forms/dynamic-forms.component';
 import { RoutingComponent } from './16-routing/routing.component';
 import { LanguageComponent } from './17-language-service/language.component';
-import { LoginComponent } from './18-login/login.component';
 import { UsageOfDynamicComponent } from './6-dynamic-component/usage-of-dynamic.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -29,7 +28,6 @@ import { UsageOfDynamicComponent } from './6-dynamic-component/usage-of-dynamic.
     ViewChildContentChildComponent,
     AfterRenderComponent,
     AbstractClassUsageComponent,
-    ResolverUsageComponent,
     DiProvidersComponent,
     Renderer2Component,
     DeferComponent,
@@ -39,8 +37,8 @@ import { UsageOfDynamicComponent } from './6-dynamic-component/usage-of-dynamic.
     DynamicFormsComponent,
     RoutingComponent,
     LanguageComponent,
-    LoginComponent,
     UsageOfDynamicComponent,
+    RouterOutlet,
   ],
 })
 export class AppComponent {}

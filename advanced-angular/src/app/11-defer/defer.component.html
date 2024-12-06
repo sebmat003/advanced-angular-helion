@@ -1,0 +1,18 @@
+<!-- @defer (on hover) {
+  <app-large></app-large>
+} @loading (minimum 1s) {
+  Loading...
+} @placeholder {
+  <div>Table placeholder</div>
+} -->
+
+<!-- <div #greeting>Hello!</div>
+@defer (on viewport(greeting)) {
+  <app-large></app-large>
+} -->
+
+@defer (on interaction; prefetch on idle) {
+  <app-large></app-large>
+} @placeholder {
+  <div>Large component placeholder</div>
+}

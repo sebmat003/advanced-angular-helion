@@ -1,3 +1,4 @@
 import { Routes } from '@angular/router';
+import { resolverRoutes } from './8-resolver/routes';
 
-export const routes: Routes = [];
+export const routes: Routes = [...resolverRoutes];
