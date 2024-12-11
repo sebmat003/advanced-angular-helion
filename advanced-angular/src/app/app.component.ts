@@ -22,23 +22,9 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   imports: [
-    NgContentComponent,
-    ChangeDetectionComponent,
-    TemplateVariablesComponent,
-    ViewChildContentChildComponent,
-    AfterRenderComponent,
-    AbstractClassUsageComponent,
-    DiProvidersComponent,
-    Renderer2Component,
-    DeferComponent,
-    PipesComponent,
-    SvgComponent,
-    CustomValidatorComponent,
     DynamicFormsComponent,
     RoutingComponent,
-    LanguageComponent,
-    UsageOfDynamicComponent,
-    RouterOutlet,
-  ],
+    LanguageComponent
+],
 })
 export class AppComponent {}

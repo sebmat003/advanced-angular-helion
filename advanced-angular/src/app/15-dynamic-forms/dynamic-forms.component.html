@@ -1,0 +1,36 @@
+@if (quiz()) {
+  <form [formGroup]="quizForm">
+    <p>{{ quiz()?.title }}</p>
+    @for (question of quiz()?.questions; track $index; let index = $index) {
+      <p>{{ index + 1 }}. {{ question.value }}</p>
+      <ng-container [formGroupName]="'question' + index">
+        @if (question.rightAnswers.length === 1) {
+          <mat-radio-group [formControlName]="'selectedAnswer'">
+            @for (answer of question.answers; track $index; let idx = $index) {
+              <mat-radio-button [value]="idx">
+                {{ answer }}
+              </mat-radio-button>
+            }
+          </mat-radio-group>
+        } @else {
+          @for (answer of question.answers; track $index; let idx = $index) {
+            <mat-checkbox [formControlName]="'answer' + idx">{{
+              answer
+            }}</mat-checkbox>
+          }
+        }
+      </ng-container>
+    }
+  </form>
+  <button
+    mat-stroked-button
+    (click)="submitQuiz()"
+    [disabled]="quizForm.invalid || quizForm.pristine"
+  >
+    Submit quiz
+  </button>
+
+  @if (this.submitted) {
+    <p>Your result: {{ result }} / {{ quiz()?.questions?.length }}</p>
+  }
+}
