@@ -1,0 +1,17 @@
+a, button {
+  cursor: pointer;
+}
+
+a {
+  transition: 0.2s;
+  min-width: 100px;
+  display: inline-block;
+
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+button {
+  margin-right: 10px;
+}

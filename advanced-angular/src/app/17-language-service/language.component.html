@@ -1,0 +1,16 @@
+<nav>
+  <a>{{ "common.home" | translate }}</a>
+  <a>{{ "common.pricing" | translate }}</a>
+  <a>{{ "common.about-us" | translate }}</a>
+  <a>{{ "common.contact" | translate }}</a>
+  @for (language of LANGUAGES; track $index) {
+  <button (click)="changeLanguage(language)">
+    {{ "common.languages." + language | translate }}
+  </button>
+  }
+</nav>
+
+<h2>{{ "main-page.title" | translate }}</h2>
+<p [translate]="'main-page.description'"></p>
+
+<p [innerHTML]="'main-page.visit-counter' | translate : { value: 214 }"></p>

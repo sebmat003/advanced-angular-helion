@@ -1,0 +1,18 @@
+{
+  "common": {
+    "home": "Strona główna",
+    "pricing": "Cennik",
+    "about-us": "O nas",
+    "contact": "Kontakt",
+    "languages": {
+      "pl": "Polski",
+      "en": "Angielski",
+      "de": "Niemiecki"
+    }
+  },
+  "main-page": {
+    "title": "Przetłumacz tę stronę!",
+    "description": "Internacjonalizacja (i18n) zapewnia, że Twoje aplikacje Angular mogą bezproblemowo dostosowywać się do różnych języków i regionów. W Angularze 18, ngx-translate oferuje potężne rozwiązanie do implementacji i18n, umożliwiając dynamiczne przełączanie języków na podstawie preferencji użytkowników lub ustawień geograficznych.",
+    "visit-counter": "Licznik odwiedzin: <b>{{ value }}</b>"
+  }
+}

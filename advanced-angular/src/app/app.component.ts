@@ -21,10 +21,6 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  imports: [
-    DynamicFormsComponent,
-    RoutingComponent,
-    LanguageComponent
-],
+  imports: [LanguageComponent, RouterOutlet],
 })
 export class AppComponent {}
